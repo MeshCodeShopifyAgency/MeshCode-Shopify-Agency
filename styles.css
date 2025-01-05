@@ -1,0 +1,364 @@
+/* General Styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    overflow-x: hidden;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+h1, h2, h3, p {
+    margin: 30px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: #fff;
+    border-radius: 5px;
+    z-index: 1000;
+    box-shadow: 0 4px 2px -2px gray;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #d49c00;
+    transform: scale(1.05);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.ab{
+    display: flex;
+    padding: 70px 10px;
+    gap: 20px;
+}
+
+/* Home Section */
+#home {
+    text-align: center;
+    background: linear-gradient(rgba(255,255,255,0.8), rgba(0,0,0,0.8)), url(images/headerimg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+}
+
+#home h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.2em;
+}
+
+#home .cta-button {
+    margin-top: 20px;
+}
+
+/* Service Section */
+#services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    background-color: #f1f1f1;
+    padding: 50px 20px;
+    text-align: center;
+}
+.ourservices{
+    background-color: #f1f1f1;
+    margin-bottom: -60px;
+    padding-top: 10px;
+}
+
+.service {
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Portfolio Section */
+#portfolio {
+    background-color: #f1f1f1;
+    padding: 50px 20px;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.portfolio-item {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.1);
+}
+
+.portfolio-item h3 {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    transform: translateY(20px);
+}
+
+.portfolio-item:hover h3 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Testimonials Section */
+.body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+.testimonial-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;  /* Allows wrapping */
+    margin: 20px;
+}
+.testimonial-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 350px;  /* Prevents stretching */
+    width: 100%;  /* Responsive width */
+    text-align: center;
+    box-sizing: border-box;
+}
+.testimonial-card img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+.testimonial-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+.client-name {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #555;
+}
+.client-position {
+    font-size: 14px;
+    color: #888;
+}
+/* Contact Section */
+#contact {
+    background-color: #f1f1f1;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact form div {
+    margin-bottom: 15px;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+#contact form button {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#contact form button:hover {
+    background-color: #d49c00;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets and Small Screens */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #home h1 {
+        font-size: 2em;
+    }
+
+    #home p {
+        font-size: 1em;
+    }
+
+    .service, .portfolio-item {
+        width: 100%;
+    }
+
+    .testimonials-container {
+        flex-direction: column;
+    }
+}
+/* Mobile Phones */
+@media screen and (max-width: 480px) {
+    #home {
+        background: linear-gradient(rgba(255,255,255,0.8), rgba(0,0,0,0.8)), url(headerimg.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    #home h1 {
+        font-size: 1.8em;
+    }
+    #home p{
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .ab{
+        display: block;
+        gap: 20px;
+    }
+    .ab span{
+        text-align: center;
+        line-height: 1.5;
+        
+    }
+    .hea
+
+    #home p {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        padding: 12px 30px;
+    }
+
+    .service, .portfolio-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .portfolio-container {
+        flex-direction: column;
+    }
+
+    .testimonials-container {
+        flex-direction: column;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+    .shopify_partner_logo{
+        display: flex;
+    }
+    .PL img{
+        width: 40px;
+        height: 40px;
+    }
+}
+.shopify_partner_logo{
+    display: flex;
+    text-align: center;
+}

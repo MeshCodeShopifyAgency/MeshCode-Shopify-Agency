@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Testimonials</title>
+    <style>
+        .body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        .testimonial-container {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;  /* Allows wrapping */
+            margin: 20px;
+        }
+        .testimonial-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 350px;  /* Prevents stretching */
+            width: 100%;  /* Responsive width */
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .testimonial-card img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+        .testimonial-card p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .client-name {
+            font-weight: bold;
+            margin-top: 10px;
+            color: #555;
+        }
+        .client-position {
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+
+    <section class="body"> 
+        <div class="testimonial-container">
+            <div class="testimonial-card">
+                <img src="client1.jpg" alt="Client Photo">
+                <p>"Working with Abah was a fantastic experience. The interactive audiobooks were beyond my expectations!"</p>
+                <div class="client-name">John Doe</div>
+                <div class="client-position">Author & Educator</div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="client2.jpg" alt="Client Photo">
+                <p>"The illustrations were vibrant and captured the essence of the story perfectly. Highly recommend!"</p>
+                <div class="client-name">Sarah Smith</div>
+                <div class="client-position">Children's Book Writer</div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="client3.jpg" alt="Client Photo">
+                <p>"I was impressed with the quality and creativity Abah brought to my project. The kids love it!"</p>
+                <div class="client-name">Emily Brown</div>
+                <div class="client-position">Publisher</div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
