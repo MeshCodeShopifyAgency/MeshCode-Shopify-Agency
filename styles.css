@@ -79,14 +79,17 @@ nav ul li a:hover {
 }
 .ab{
     display: flex;
-    padding: 70px 10px;
-    gap: 20px;
+    padding: 70px 70px;
 }
-
+.ab p{
+    width: 70%;
+    line-height: 1.9;
+    letter-spacing: normal;
+}
 /* Home Section */
 #home {
     text-align: center;
-    background: linear-gradient(rgba(255,255,255,0.8), rgba(0,0,0,0.8)), url(images/headerimg.jpg);
+    background: linear-gradient(rgba(255,255,255,0.8), rgba(0,0,0,0.8)), url(headerimg.jpg);
     background-size: cover;
     background-position: center;
     padding: 100px 20px;
@@ -275,7 +278,7 @@ footer {
 /* Media Queries for Responsiveness */
 
 /* Tablets and Small Screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 780px) {
     nav ul {
         flex-direction: column;
         margin-top: 10px;
@@ -283,6 +286,16 @@ footer {
 
     nav ul li {
         margin: 10px 0;
+    }
+    .ab{
+        display: block;
+        padding: 10px;
+    }
+    .ab p{
+        text-align: left;
+    }
+    .ab img{
+        width: 100%;
     }
 
     #home h1 {
@@ -317,14 +330,14 @@ footer {
     }
     .ab{
         display: block;
-        gap: 20px;
+        padding: 10px;
     }
-    .ab span{
-        text-align: center;
-        line-height: 1.5;
-        
+    .ab p{
+        text-align: left;
     }
-    .hea
+    .ab img{
+        width: 100%;
+    }
 
     #home p {
         font-size: 1em;
