@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://meshcodeshopifyagency.github.io/MeshCode-Shopify-Agency/
+sitemap.xml
